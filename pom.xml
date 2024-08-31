@@ -11,4 +11,12 @@
         <maven.compiler.target>22</maven.compiler.target>
         <exec.mainClass>com.usil.actividad.Actividad</exec.mainClass>
     </properties>
+    <dependencies>
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.34</version>
+		<scope>provided</scope>
+	</dependency>
+</dependencies>
 </project>
