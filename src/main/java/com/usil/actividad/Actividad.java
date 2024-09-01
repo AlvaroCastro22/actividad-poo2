@@ -4,6 +4,8 @@
 
 package com.usil.actividad;
 
+import java.util.Scanner;
+
 /**
  *
  * @author alvar
@@ -11,6 +13,28 @@ package com.usil.actividad;
 public class Actividad {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        boolean salir = false;
+        while(!salir){
+            System.out.println("--Menu de Gestion de Empleados--");
+            System.out.println("Ingresa una opcion:");
+            int opcion = scanner.nextInt();
+            scanner.nextLine();
+            switch(opcion){
+                case 1 -> {
+                    System.out.println("Ingrese el nombre del empleado");
+                    String nombre = scanner.nextLine();
+                    System.out.println("Ingrese el cargo del empleado");
+                    String apellido = scanner.nextLine();
+                    
+                    salir = true;
+                }
+                default->{
+                    System.out.println("Elige un numero correcto");
+                }
+            }
+            
+        }
+        scanner.close();
     }
 }
